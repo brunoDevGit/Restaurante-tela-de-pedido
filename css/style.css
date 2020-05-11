@@ -1,0 +1,40 @@
+body{
+    background-color: rgba(255, 255, 255, 0.931);
+ }
+ header{
+     background-color: #dd1021f5;
+     color: white;
+     font-family:'Times New Roman', Times, serif;
+     margin-bottom: 2% ;
+     padding: 1%; }
+ header p {text-align: center;
+ font-size: 25px;
+
+     
+ } 
+ h2{
+     background-color: rgba(255, 255, 255, 0.931);
+     text-align: center;
+     font-family:'Times New Roman', Times, serif;
+     margin-bottom: 2%;
+     font-size: 20px;
+ }
+ form{
+       
+     padding-bottom: 1%; 
+ }
+
+ section{background-color:  255, 255, 255, 0.931;}  
+
+ thead{background-color: #ffc400f1;}  
+
+ .especial{font-family: 'Times New Roman', Times, serif; font-size: 13px;} 
+
+ input {text-align: center; }
+
+ .enviar{text-align: right;
+         padding: 1%;
+         background-color: #ffc300; }
+
+ .button{ margin-right: 8%;}    
+      

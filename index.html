@@ -6,44 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Pedidos</title>
 </head>
-<style>
-    body{
-       background-color: rgba(255, 255, 255, 0.931);
-    }
-    header{margin-bottom: 5% ;
-            padding: 1%; }
-    header p {text-align: center;
-    font-size: 30px;
-        
-    } 
-    h2{
-        background-color: rgba(255, 255, 255, 0.931);
-        text-align: center;
-        font-family:'Times New Roman', Times, serif;
-        margin-bottom: 2%;
-    }
-    form{background-color: #dd1021f5;
-         color: white;  
-        padding-bottom: 1%; 
-    }
 
-    section{background-color:  255, 255, 255, 0.931;}  
-
-    thead{background-color: #ffc400f1;}  
-
-    .especial{font-family: 'Times New Roman', Times, serif; font-size: 13px;} 
-
-    input {text-align: center; }
-
-    .enviar{text-align: right;
-            padding: 1%;
-        background-color: #ffc300; }
-
-    .button{ margin-right: 8%;}    
-         
-</style>
 <body>
     <header>
         <div class="  container">
@@ -52,13 +18,16 @@
 
         </div>
     </header>
-    <div class="container">
+    <div class="container ">
+
         <section>
 
             <h2> Faça já seu pedido</h2>
+
+
             <form>
 
-                <table class="table table-hover">
+                <table class="table table-hover ">
                     <thead>
                         <tr>
                             <th scope="col">Porção/Unidade</th>
@@ -70,15 +39,15 @@
                     <tbody>
                         <tr class="item">
 
-                            <td> Escondidinho de carne - 
-                               <a class="especial"> Especial da Casa</a></td>
+                            <td> Escondidinho de carne -
+                                <a class="especial"> Especial da Casa</a></td>
                             <td>
                                 <div class="input-group">
                                     <div class="input-group-append" id="button-addon4"></div>
-                                    <button class="btn- btn btn-warning" type="button"> - </button>
-                                    <input  max="7" class="quant" value="0" type="number" name="Xtudo"
+                                    <button class="btnRemove btn btn-danger" type="button"> - </button>
+                                    <input max="10" class="quant" value="0" type="number" name="Xtudo"
                                         class="form-control">
-                                    <button class="btn+ btn btn-success" type="button">+</button>
+                                    <button class="btnAdd btn btn-success" type="button">+</button>
                                 </div>
                             </td>
                             <td class="preco-item">12.90</td>
@@ -89,10 +58,10 @@
                             <td>
                                 <div class="input-group">
                                     <div class="input-group-append" id="button-addon4"></div>
-                                    <button class="btn- btn btn-warning" type="button"> - </button>
-                                    <input max="7" class="quant" value="0" type="number" name="Xtudo"
+                                    <button class="btnRemove btn btn-danger" type="button"> - </button>
+                                    <input max="10" class="quant" value="0" type="number" name="Xtudo"
                                         class="form-control">
-                                    <button class="btn+ btn btn-success" type="button">+</button>
+                                    <button class="btnAdd btn btn-success" type="button">+</button>
                                 </div>
                             </td>
                             <td class="preco-item">7.90</td>
@@ -103,10 +72,10 @@
                             <td>
                                 <div class="input-group">
                                     <div class="input-group-append" id="button-addon4"></div>
-                                    <button class="btn- btn btn-warning" type="button"> - </button>
-                                    <input max="7" class="quant" value="0" type="number" name="Xtudo"
+                                    <button class="btnRemove btn btn-danger" type="button"> - </button>
+                                    <input max="10" class="quant" value="0" type="number" name="Xtudo"
                                         class="form-control">
-                                    <button class="btn+ btn btn-success" type="button">+</button>
+                                    <button class="btnAdd btn btn-success" type="button">+</button>
                                 </div>
                             </td>
                             <td class="preco-item">10.90</td>
@@ -117,21 +86,23 @@
                             <td colspan="2">Total</td>
                             <td id="total">0</td>
                         </tr>
-                        
+
                     </tfoot>
-                    
+
                 </table>
             </form>
-                <div class=" enviar"> <div class=" button"> <button class=" btn+ btn btn-success" 
-                type="button">Enviar pedido</button></div></div>
-                
-              
-           
+            <div class=" enviar">
+                <div class=" button"> <button class=" btn+ btn btn-success" type="button">Enviar pedido</button></div>
+            </div>
+
+
+
         </section>
     </div>
 
 
-    </div>
+
 </body>
- 
+<script src="./js/index.js"></script>
+
 </html>
