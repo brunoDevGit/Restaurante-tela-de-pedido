@@ -30,8 +30,8 @@ for (let button of btnRemover) {
         var item = button.closest('.item');
 
         var input = item.querySelector('.quant');
-        
-        if(input.value > 0 ){
+
+        if (input.value > 0) {
             input.value--;
             var preco = capturaPreco(item);
             addTotal(-preco);
@@ -39,16 +39,18 @@ for (let button of btnRemover) {
 
     }
 }
-function capturaPreco(item){
+
+
+
+function capturaPreco(item) {
     var precoItem = item.querySelector('.precoItem');
-    return Number(precoItem.textContent);
+    return Number(precoItem.textContent)
 }
 
-function addTotal(preco){
-    var capturaTotal = document.querySelector("#total");
-
+function addTotal(preco) {
+    var capturaTotal = (document.querySelector("#total"));
+ 
     capturaTotal.textContent = preco + Number(capturaTotal.textContent);
-
+    
 
 }
-
